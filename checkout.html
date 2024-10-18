@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Footy Gear Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Footy Gear Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Checkout</h2>
+        <div id="checkout-steps">
+            <div class="step" id="step-1">
+                <h3>Enter Your Details</h3>
+                <form id="details-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                    <label for="address">Shipping Address:</label>
+                    <textarea id="address" required></textarea>
+                    <button type="button" onclick="goToStep(2)">Continue to Shipping Options</button>
+                </form>
+            </div>
+
+            <div class="step" id="step-2" style="display: none;">
+                <h3>Select Shipping Options</h3>
+                <form id="shipping-form">
+                    <label for="shipping">Shipping Method:</label>
+                    <select id="shipping">
+                        <option value="standard">Standard Shipping</option>
+                        <option value="express">Express Shipping</option>
+                    </select>
+                    <button type="button" onclick="goToStep(3)">Proceed to Payment</button>
+                </form>
+            </div>
+
+            <div class="step" id="step-3" style="display: none;">
+                <h3>Payment Information</h3>
+                <form id="payment-form">
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" required>
+                    <label for="expiry">Expiry Date:</label>
+                    <input type="text" id="expiry" required placeholder="MM/YY">
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" required>
+                    <button type="button" onclick="completePurchase()">Complete Purchase</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Footy Gear Hub</p>
+        <nav>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="shipping.html">Shipping & Returns</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footy Gear Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Footy Gear Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="shop.html">Shop</a>
+                    <ul class="dropdown">
+                        <li><a href="jerseys.html">Jerseys</a></li>
+                        <li><a href="boots.html">Boots</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="cart.html" id="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="banner">
+            <h2>Featured Promotions</h2>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="images/promo1.jpg" alt="Promotion 1" class="banner-image">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/promo2.jpg" alt="Promotion 2" class="banner-image">
+                </div>
+                <div class="mySlides fade">
+                    <img src="images/promo3.jpg" alt="Promotion 3" class="banner-image">
+                </div>
+            </div>
+        </section>
+        
+        
+    
+        <section id="products">
+            <h2>Featured Products</h2>
+            <div class="product" data-name="Football Jersey" data-price="49.99">
+                <img src="images/jersey.jpg" alt="Football Jersey">
+                <h3>Football Jersey</h3>
+                <p>$99.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Football Boots" data-price="79.99">
+                <img src="images/boots.jpg" alt="Football Boots">
+                <h3>Football Boots</h3>
+                <p>$119.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Goalkeeper Gloves" data-price="39.99">
+                <img src="images/gloves.jpg" alt="Goalkeeper Gloves">
+                <h3>Goalkeeper Gloves</h3>
+                <p>$59.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </section>
+        
+
+        <section id="cta">
+            <h2>Shop Now!</h2>
+            <a href="shop.html" class="cta-button">Go to Shop</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Footy Gear Hub</p>
+        <nav>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="shipping.html">Shipping & Returns</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
